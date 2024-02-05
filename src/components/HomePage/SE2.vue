@@ -5,7 +5,7 @@
         <div class="container py-2">
             <div class="row">
                 <template v-for="item in fakeData" :key="item.id">
-                    <div class="col-6 col-lg-4 col-xl-3 pb-3"  @click="setActiveId(item.id)" :class="{'bg-primary': activeId === item.id}">
+                    <div class="col-4 col-lg-3 col-xl-2 pb-3"  @click="setActiveId(item.id)" :class="{'bg-primary': activeId === item.id}">
                         <div class="card border-0 shadow-lg rounded-10">
                             <img :src="item.img" class="card-img-top" :alt="item.title">
                             <div class="card-body">
